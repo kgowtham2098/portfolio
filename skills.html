@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface": "#0c0c0f",
+                    "on-surface-variant": "#a1a1aa",
+                    "tertiary-fixed": "#bbf7d0",
+                    "on-tertiary-fixed": "#003318",
+                    "tertiary": "#34d399",
+                    "primary-fixed": "#ede9fe",
+                    "on-tertiary-fixed-variant": "#047857",
+                    "on-primary": "#0a0012",
+                    "on-error-container": "#fca5a5",
+                    "surface-tint": "#a78bfa",
+                    "surface-container": "#121215",
+                    "outline-variant": "#27272a",
+                    "tertiary-container": "#065f46",
+                    "primary-fixed-dim": "#c4b5fd",
+                    "outline": "#52525b",
+                    "inverse-on-surface": "#09090b",
+                    "on-secondary-fixed-variant": "#3f3f46",
+                    "on-secondary-fixed": "#18181b",
+                    "on-primary-container": "#ede9fe",
+                    "background": "#09090b",
+                    "on-error": "#1a0000",
+                    "surface-container-highest": "#1e1e22",
+                    "secondary": "#71717a",
+                    "secondary-container": "#27272a",
+                    "error-container": "#3b1111",
+                    "surface-dim": "#0c0c0f",
+                    "surface-container-lowest": "#09090b",
+                    "primary-container": "#7c3aed",
+                    "primary": "#a78bfa",
+                    "on-tertiary-container": "#bbf7d0",
+                    "on-primary-fixed": "#2e1065",
+                    "on-tertiary": "#001a12",
+                    "tertiary-fixed-dim": "#6ee7b7",
+                    "surface-variant": "#18181b",
+                    "surface-bright": "#18181b",
+                    "on-secondary": "#09090b",
+                    "inverse-surface": "#fafafa",
+                    "secondary-fixed-dim": "#71717a",
+                    "on-background": "#fafafa",
+                    "on-surface": "#fafafa",
+                    "on-secondary-container": "#a1a1aa",
+                    "surface-container-high": "#18181b",
+                    "error": "#ef4444",
+                    "surface-container-low": "#0f0f12",
+                    "secondary-fixed": "#a1a1aa",
+                    "on-primary-fixed-variant": "#5b21b6",
+                    "inverse-primary": "#5b21b6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Geist"],
+                    "body": ["Geist"],
+                    "label": ["Geist"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Geist', sans-serif; background-color: #09090b; color: #fafafa; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .skill-grid-pattern {
+            background-image: radial-gradient(#27272a 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#09090b]/80 backdrop-blur-md border-b border-[#27272a]">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-bold tracking-tighter text-[#fafafa]">Gowthaman K</div>
+<div class="hidden md:flex items-center gap-8 font-['Geist'] tracking-tight">
+<a class="text-[#a1a1aa] hover:text-[#fafafa] transition-colors" href="index.html">Home</a>
+<a class="text-[#a1a1aa] hover:text-[#fafafa] transition-colors" href="experience.html">Experience</a>
+<a class="text-[#a78bfa] border-b-2 border-[#a78bfa] pb-1" href="skills.html">Skills</a>
+<a class="text-[#a1a1aa] hover:text-[#fafafa] transition-colors" href="projects.html">Projects</a>
+<a class="text-[#a1a1aa] hover:text-[#fafafa] transition-colors" href="contact.html">Contact</a>
+</div>
+<a href="resume.html" class="bg-primary text-on-primary px-5 py-2 rounded font-medium hover:brightness-110 active:scale-95 transition-all inline-block">Resume</a>
+</div>
+</nav>
+<main class="pt-24 pb-20 px-6 max-w-7xl mx-auto">
+<!-- Hero Section -->
+<header class="mb-16">
+<h1 class="text-5xl md:text-7xl font-bold tracking-tighter mb-4 text-on-background">Skills &amp; <span class="text-primary">Expertise</span></h1>
+<p class="text-on-surface-variant text-lg max-w-2xl">A technical breakdown of my design stack and core competencies in user experience research and interface construction.</p>
+</header>
+<!-- Bento Grid: Design Tools -->
+<section class="mb-24">
+<div class="flex items-center gap-3 mb-8">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">architecture</span>
+<h2 class="text-2xl font-bold tracking-tight">Design Tools</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-6 gap-4">
+<!-- Figma - Featured -->
+<div class="md:col-span-4 bg-surface-container border border-outline-variant rounded-xl p-8 relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-8 text-6xl opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-8xl">draw</span>
+</div>
+<div class="relative z-10">
+<div class="flex items-center gap-2 mb-2">
+<span class="text-primary font-mono text-sm uppercase tracking-widest">Primary Stack</span>
+</div>
+<h3 class="text-3xl font-bold mb-4">Figma</h3>
+<p class="text-on-surface-variant mb-8 max-w-md">Advanced proficiency in auto-layout, design systems, and complex prototyping. Expert in collaborative workflows and developer handoff.</p>
+<div class="flex items-center gap-4">
+<div class="h-1 flex-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[98%]"></div>
+</div>
+<span class="font-mono text-primary">98%</span>
+</div>
+</div>
+</div>
+<!-- Adobe XD -->
+<div class="md:col-span-2 bg-surface-container border border-outline-variant rounded-xl p-8 hover:border-primary transition-colors">
+<h3 class="text-xl font-bold mb-2">Adobe XD</h3>
+<p class="text-on-surface-variant text-sm mb-6">Component states and voice prototyping for cross-platform applications.</p>
+<div class="flex items-center gap-4">
+<div class="h-1 flex-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[85%]"></div>
+</div>
+<span class="font-mono text-sm text-primary">85%</span>
+</div>
+</div>
+<!-- Photoshop -->
+<div class="md:col-span-2 bg-surface-container border border-outline-variant rounded-xl p-8 hover:border-primary transition-colors">
+<h3 class="text-xl font-bold mb-2">Photoshop</h3>
+<p class="text-on-surface-variant text-sm mb-6">High-fidelity photo manipulation and asset creation for web interfaces.</p>
+<div class="flex items-center gap-4">
+<div class="h-1 flex-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[90%]"></div>
+</div>
+<span class="font-mono text-sm text-primary">90%</span>
+</div>
+</div>
+<!-- Illustrator -->
+<div class="md:col-span-2 bg-surface-container border border-outline-variant rounded-xl p-8 hover:border-primary transition-colors">
+<h3 class="text-xl font-bold mb-2">Illustrator</h3>
+<p class="text-on-surface-variant text-sm mb-6">Scalable vector graphics, iconography sets, and brand identity design.</p>
+<div class="flex items-center gap-4">
+<div class="h-1 flex-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[92%]"></div>
+</div>
+<span class="font-mono text-sm text-primary">92%</span>
+</div>
+</div>
+<!-- After Effects -->
+<div class="md:col-span-2 bg-surface-container border border-outline-variant rounded-xl p-8 hover:border-primary transition-colors">
+<h3 class="text-xl font-bold mb-2">After Effects</h3>
+<p class="text-on-surface-variant text-sm mb-6">Motion design, micro-interactions, and Lottie animations for UI.</p>
+<div class="flex items-center gap-4">
+<div class="h-1 flex-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[75%]"></div>
+</div>
+<span class="font-mono text-sm text-primary">75%</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Matrix Layout: UX Skills -->
+<section>
+<div class="flex items-center gap-3 mb-8">
+<span class="material-symbols-outlined text-tertiary" style="font-variation-settings: 'FILL' 1;">psychology</span>
+<h2 class="text-2xl font-bold tracking-tight">UX Core Competencies</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-0 border border-outline-variant rounded-xl overflow-hidden bg-outline-variant/10">
+<!-- Row 1 -->
+<div class="p-8 border-b md:border-r border-outline-variant hover:bg-surface-container-high transition-colors">
+<div class="mb-4">
+<span class="material-symbols-outlined text-tertiary">grid_view</span>
+</div>
+<h3 class="text-xl font-bold mb-2 text-fafafa">Wireframing</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Translating conceptual ideas into low-fidelity structural blueprints to define core layouts and functional requirements.</p>
+</div>
+<div class="p-8 border-b md:border-r border-outline-variant hover:bg-surface-container-high transition-colors">
+<div class="mb-4">
+<span class="material-symbols-outlined text-tertiary">conversion_path</span>
+</div>
+<h3 class="text-xl font-bold mb-2 text-fafafa">User Flow</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Mapping intricate paths users take to complete tasks, ensuring logical progression and reducing cognitive load.</p>
+</div>
+<div class="p-8 border-b border-outline-variant hover:bg-surface-container-high transition-colors">
+<div class="mb-4">
+<span class="material-symbols-outlined text-tertiary">account_tree</span>
+</div>
+<h3 class="text-xl font-bold mb-2 text-fafafa">Information Architecture</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Organizing complex data structures into intuitive hierarchies that empower users to find information efficiently.</p>
+</div>
+<!-- Row 2 -->
+<div class="p-8 border-b md:border-b-0 md:border-r border-outline-variant hover:bg-surface-container-high transition-colors">
+<div class="mb-4">
+<span class="material-symbols-outlined text-tertiary">dynamic_feed</span>
+</div>
+<h3 class="text-xl font-bold mb-2 text-fafafa">Prototyping</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Building interactive, high-fidelity prototypes that simulate final products for stakeholder review and testing.</p>
+</div>
+<div class="p-8 border-b md:border-b-0 md:border-r border-outline-variant hover:bg-surface-container-high transition-colors">
+<div class="mb-4">
+<span class="material-symbols-outlined text-tertiary">layers</span>
+</div>
+<h3 class="text-xl font-bold mb-2 text-fafafa">Mockups</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Crafting pixel-perfect visual designs that adhere to brand systems while maintaining strict usability standards.</p>
+</div>
+<div class="p-8 hover:bg-surface-container-high transition-colors">
+<div class="mb-4">
+<span class="material-symbols-outlined text-tertiary">biotech</span>
+</div>
+<h3 class="text-xl font-bold mb-2 text-fafafa">Usability Testing</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Conducting empirical research and task-based analysis to identify friction points and validate design decisions.</p>
+</div>
+</div>
+</section>
+<!-- Decorative Quote Section -->
+<section class="mt-32 mb-16 py-20 bg-surface-container rounded-3xl relative overflow-hidden border border-outline-variant">
+<div class="skill-grid-pattern absolute inset-0 opacity-20"></div>
+<div class="relative z-10 text-center px-6">
+<blockquote class="text-3xl md:text-4xl font-bold tracking-tight italic text-fafafa mb-6">
+                    "Precision in design is the bridge between <span class="text-primary">complexity</span> and <span class="text-tertiary">clarity</span>."
+                </blockquote>
+<div class="w-12 h-1 bg-primary mx-auto mb-4"></div>
+<p class="text-on-surface-variant uppercase tracking-widest text-sm font-bold">The Obsidian Philosophy</p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#09090b] w-full py-12 border-t border-[#27272a]">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto gap-4">
+<div class="text-lg font-semibold text-[#fafafa]">Gowthaman K</div>
+<div class="font-['Geist'] text-sm text-[#a1a1aa] text-center md:text-left">
+                © 2024 Gowthaman K. Built with Precision.
+            </div>
+<div class="flex gap-6">
+<a class="text-[#a1a1aa] hover:text-[#34d399] transition-colors font-['Geist'] text-sm" href="#">LinkedIn</a>
+<a class="text-[#a1a1aa] hover:text-[#34d399] transition-colors font-['Geist'] text-sm" href="#">Dribbble</a>
+<a class="text-[#a1a1aa] hover:text-[#34d399] transition-colors font-['Geist'] text-sm" href="#">GitHub</a>
+<a class="text-[#a1a1aa] hover:text-[#34d399] transition-colors font-['Geist'] text-sm" href="#">Email</a>
+</div>
+</div>
+</footer>
+</body></html>

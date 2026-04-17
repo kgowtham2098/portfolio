@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+                  "surface": "#0c0c0f",
+                  "on-surface-variant": "#a1a1aa",
+                  "tertiary-fixed": "#bbf7d0",
+                  "on-tertiary-fixed": "#003318",
+                  "tertiary": "#34d399",
+                  "primary-fixed": "#ede9fe",
+                  "on-tertiary-fixed-variant": "#047857",
+                  "on-primary": "#0a0012",
+                  "on-error-container": "#fca5a5",
+                  "surface-tint": "#a78bfa",
+                  "surface-container": "#121215",
+                  "outline-variant": "#27272a",
+                  "tertiary-container": "#065f46",
+                  "primary-fixed-dim": "#c4b5fd",
+                  "outline": "#52525b",
+                  "inverse-on-surface": "#09090b",
+                  "on-secondary-fixed-variant": "#3f3f46",
+                  "on-secondary-fixed": "#18181b",
+                  "on-primary-container": "#ede9fe",
+                  "background": "#09090b",
+                  "on-error": "#1a0000",
+                  "surface-container-highest": "#1e1e22",
+                  "secondary": "#71717a",
+                  "secondary-container": "#27272a",
+                  "error-container": "#3b1111",
+                  "surface-dim": "#0c0c0f",
+                  "surface-container-lowest": "#09090b",
+                  "primary-container": "#7c3aed",
+                  "primary": "#a78bfa",
+                  "on-tertiary-container": "#bbf7d0",
+                  "on-primary-fixed": "#2e1065",
+                  "on-tertiary": "#001a12",
+                  "tertiary-fixed-dim": "#6ee7b7",
+                  "surface-variant": "#18181b",
+                  "surface-bright": "#18181b",
+                  "on-secondary": "#09090b",
+                  "inverse-surface": "#fafafa",
+                  "secondary-fixed-dim": "#71717a",
+                  "on-background": "#fafafa",
+                  "on-surface": "#fafafa",
+                  "on-secondary-container": "#a1a1aa",
+                  "surface-container-high": "#18181b",
+                  "error": "#ef4444",
+                  "surface-container-low": "#0f0f12",
+                  "secondary-fixed": "#a1a1aa",
+                  "on-primary-fixed-variant": "#5b21b6",
+                  "inverse-primary": "#5b21b6"
+          },
+          "borderRadius": {
+                  "DEFAULT": "0.25rem",
+                  "lg": "0.5rem",
+                  "xl": "0.75rem",
+                  "full": "9999px"
+          },
+          "fontFamily": {
+                  "headline": ["Geist"],
+                  "body": ["Geist"],
+                  "label": ["Geist"]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    body { font-family: 'Geist', sans-serif; }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-primary selection:text-on-primary">
+<nav class="fixed top-0 w-full z-50 bg-[#09090b]/80 backdrop-blur-md border-b border-[#27272a]">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-bold tracking-tighter text-[#fafafa]">Gowthaman K</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#a1a1aa] hover:text-[#fafafa] transition-colors font-['Geist'] tracking-tight" href="index.html">Home</a>
+<a class="text-[#a78bfa] border-b-2 border-[#a78bfa] pb-1 font-['Geist'] tracking-tight" href="experience.html">Experience</a>
+<a class="text-[#a1a1aa] hover:text-[#fafafa] transition-colors font-['Geist'] tracking-tight" href="skills.html">Skills</a>
+<a class="text-[#a1a1aa] hover:text-[#fafafa] transition-colors font-['Geist'] tracking-tight" href="projects.html">Projects</a>
+<a class="text-[#a1a1aa] hover:text-[#fafafa] transition-colors font-['Geist'] tracking-tight" href="contact.html">Contact</a>
+</div>
+<a href="resume.html" class="bg-primary text-on-primary px-5 py-2 rounded-lg font-medium hover:opacity-90 active:scale-95 transition-all duration-100 inline-block">
+        Resume
+      </a>
+</div>
+</nav>
+<main class="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+<header class="mb-20">
+<h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter text-on-background mb-6">
+        The Professional <span class="text-primary">Timeline.</span>
+</h1>
+<p class="text-on-surface-variant text-xl max-w-2xl leading-relaxed">
+        Building high-performance enterprise systems through the lens of human-centered design. A journey of evolving complex data into seamless experiences.
+      </p>
+</header>
+<div class="relative">
+<div class="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-outline-variant hidden md:block"></div>
+<section class="mb-24 relative flex flex-col md:flex-row items-center gap-8 md:gap-0">
+<div class="w-full md:w-1/2 md:pr-16 flex flex-col items-start md:items-end text-left md:text-right">
+<div class="bg-primary-container/20 text-primary px-3 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-4">Current Role</div>
+<h2 class="text-3xl font-bold text-on-background mb-1">Senior UI/UX Designer</h2>
+<p class="text-primary font-medium text-lg mb-4">Skyraan Technologies</p>
+<p class="text-on-surface-variant leading-relaxed max-w-lg">
+            Leading the design evolution of enterprise-scale SaaS platforms. Orchestrating user-centered design strategies to streamline complex workflows for data-intensive applications. Focused on design systems scalability and cross-functional leadership.
+          </p>
+</div>
+<div class="absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-primary ring-4 ring-background z-10 hidden md:block"></div>
+<div class="w-full md:w-1/2 md:pl-16">
+<div class="bg-surface-container border border-outline-variant rounded-xl p-8 hover:bg-surface-container-high transition-colors">
+<span class="text-tertiary font-mono text-sm block mb-2">June 2023 — Present</span>
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-container-highest px-3 py-1 rounded text-xs text-on-surface border border-outline-variant">Design Systems</span>
+<span class="bg-surface-container-highest px-3 py-1 rounded text-xs text-on-surface border border-outline-variant">SaaS Architecture</span>
+<span class="bg-surface-container-highest px-3 py-1 rounded text-xs text-on-surface border border-outline-variant">Strategy</span>
+</div>
+<div class="mt-6 aspect-video rounded-lg bg-surface-container-lowest overflow-hidden border border-outline-variant">
+<img class="w-full h-full object-cover opacity-60" data-alt="Futuristic data dashboard with glowing charts, violet accent colors, and dark interface layout for an enterprise analytics platform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSDEyNS6_6E9qe71BEcXebS0y-eb_q4JsQGecoTheSpIVMB2YSg0mewrTK2NUXIFpuTRQ2EDLeQeWxaZgtA64NJl3cidNwW7l4fO3VWJYCHiW9OBZIut7TxfrWBcUEZFe8tJhsnJ4aA8omhbN2h3W6wh4dc7HBWvAfk2c0at2E85UgVCALsW_WDUpsoUNT_1w5841nE9ZZY_Wr8quoaQ-1yHpA90Khy6c6J60rDImZ77l6W_Erpr4jhmMxcHDB6aT9i4bniMOTPraS"/>
+</div>
+</div>
+</div>
+</section>
+<section class="mb-24 relative flex flex-col md:flex-row-reverse items-center gap-8 md:gap-0">
+<div class="w-full md:w-1/2 md:pl-16 flex flex-col items-start text-left">
+<h2 class="text-3xl font-bold text-on-background mb-1">UI/UX Designer</h2>
+<p class="text-primary font-medium text-lg mb-4">Axeraan Technologies</p>
+<p class="text-on-surface-variant leading-relaxed max-w-lg">
+            Developed intuitive interfaces for multi-tenant business solutions. Transformed abstract requirements into high-fidelity interactive prototypes. Focused on bridging the gap between technical constraints and user needs through iterative testing.
+          </p>
+</div>
+<div class="absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-outline ring-4 ring-background z-10 hidden md:block"></div>
+<div class="w-full md:w-1/2 md:pr-16">
+<div class="bg-surface-container border border-outline-variant rounded-xl p-8 hover:bg-surface-container-high transition-colors text-right flex flex-col items-end">
+<span class="text-tertiary font-mono text-sm block mb-2">Nov 2020 — June 2023</span>
+<div class="flex flex-wrap gap-2 justify-end">
+<span class="bg-surface-container-highest px-3 py-1 rounded text-xs text-on-surface border border-outline-variant">Wireframing</span>
+<span class="bg-surface-container-highest px-3 py-1 rounded text-xs text-on-surface border border-outline-variant">B2B Design</span>
+<span class="bg-surface-container-highest px-3 py-1 rounded text-xs text-on-surface border border-outline-variant">Prototyping</span>
+</div>
+<div class="mt-6 w-full aspect-video rounded-lg bg-surface-container-lowest overflow-hidden border border-outline-variant">
+<img class="w-full h-full object-cover opacity-60" data-alt="Detailed close up of a clean UI design software interface showing wireframes and grid layouts on a high-res monitor in a dark studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsEFFi1S7GNlyOYKh4eKmid0YC0EjdZGibuTdAXF8qEVCZZ8ULccsak0sQ33VyXEBczrvkVZ7RnwAhCIltRCnGUtEikTJv2c3bBTbZYixfwQSQRju7i1_vJVLWMB9LeWRDypO0Tx30i8yjEfMtFRXbkgKVCJprIfbZy8ExwBFSPchlZM5w5CLvLAfUw2zt5DvBsxaYsIAnu-8RYmAqenRxKIyY4BVtN6x-ryZN3sL-IK6QU20YcyIOrFvoWFBf1W9yGqFe_Zt9E0sr"/>
+</div>
+</div>
+</div>
+</section>
+<section class="mb-24 relative flex flex-col md:flex-row items-center gap-8 md:gap-0">
+<div class="w-full md:w-1/2 md:pr-16 flex flex-col items-start md:items-end text-left md:text-right">
+<h2 class="text-3xl font-bold text-on-background mb-1">Junior Designer</h2>
+<p class="text-primary font-medium text-lg mb-4">Webapptiv</p>
+<p class="text-on-surface-variant leading-relaxed max-w-lg">
+            Started the design career focusing on responsive web design and mobile-first principles. Assisted in the creation of visual assets and component libraries. Gained core experience in modern UI principles and design-to-development handoffs.
+          </p>
+</div>
+<div class="absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-outline ring-4 ring-background z-10 hidden md:block"></div>
+<div class="w-full md:w-1/2 md:pl-16">
+<div class="bg-surface-container border border-outline-variant rounded-xl p-8 hover:bg-surface-container-high transition-colors">
+<span class="text-tertiary font-mono text-sm block mb-2">May 2019 — Oct 2020</span>
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-container-highest px-3 py-1 rounded text-xs text-on-surface border border-outline-variant">Visual Design</span>
+<span class="bg-surface-container-highest px-3 py-1 rounded text-xs text-on-surface border border-outline-variant">HTML/CSS</span>
+<span class="bg-surface-container-highest px-3 py-1 rounded text-xs text-on-surface border border-outline-variant">Iconography</span>
+</div>
+<div class="mt-6 aspect-video rounded-lg bg-surface-container-lowest overflow-hidden border border-outline-variant">
+<img class="w-full h-full object-cover opacity-60" data-alt="Minimalist workspace with a laptop showing a clean landing page design, soft ambient studio lighting, dark aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQkt2Rmu-WEvFtmxcpxx5rgljNhgi9m1-nrhhQfRE7nbojx1xeLu9fPr35VhEwd3M_lnXR_r-d4atUCKevHIgkiam7ubXC78zYynqUxGFW6cfxg3C0YAV2iVjdYrQL2ZpimHJIGca1p_-BfWtXHlbg98wtd5BBSRr0idIqPuM9g5syj-sJGDysSWzE-6qlarpPkwJesDV5VrLHi6j39n2wTSHH3T2a5zlHLhB7LoBGFs4zy-qfItus5Bbp02Hj4NoxuBayy11y0K_E"/>
+</div>
+</div>
+</div>
+</section>
+</div>
+<section class="mt-32 p-12 bg-surface-container border border-outline-variant rounded-2xl relative overflow-hidden">
+<div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-96 h-96 bg-primary/10 blur-[120px] rounded-full"></div>
+<div class="relative z-10 max-w-3xl">
+<h3 class="text-3xl font-bold mb-4">Philosophies &amp; Approach</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+<div>
+<div class="flex items-center gap-3 mb-3 text-tertiary">
+<span class="material-symbols-outlined">analytics</span>
+<span class="font-bold tracking-tight">Data-Driven Design</span>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed">I believe intuition should be verified by data. Every UI decision is backed by user research and behavior metrics.</p>
+</div>
+<div>
+<div class="flex items-center gap-3 mb-3 text-tertiary">
+<span class="material-symbols-outlined">layers</span>
+<span class="font-bold tracking-tight">Systemic Thinking</span>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed">I don't design pages; I design systems. Atomic structures ensure consistency across complex enterprise ecosystems.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-[#09090b] w-full py-12 border-t border-[#27272a]">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto gap-4">
+<div class="text-lg font-semibold text-[#fafafa]">Gowthaman K</div>
+<div class="flex gap-8">
+<a class="text-[#a1a1aa] hover:text-[#34d399] transition-colors font-['Geist'] text-sm" href="#">LinkedIn</a>
+<a class="text-[#a1a1aa] hover:text-[#34d399] transition-colors font-['Geist'] text-sm" href="#">Dribbble</a>
+<a class="text-[#a1a1aa] hover:text-[#34d399] transition-colors font-['Geist'] text-sm" href="#">GitHub</a>
+<a class="text-[#a1a1aa] hover:text-[#34d399] transition-colors font-['Geist'] text-sm" href="#">Email</a>
+</div>
+<div class="text-[#a1a1aa] font-['Geist'] text-sm">© 2024 Gowthaman K. Built with Precision.</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gowthaman K | UI/UX Designer Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#7c3aed",
+                        "tertiary-fixed-dim": "#6ee7b7",
+                        "outline": "#52525b",
+                        "on-surface-variant": "#a1a1aa",
+                        "primary-fixed": "#ede9fe",
+                        "secondary-container": "#27272a",
+                        "on-tertiary-fixed-variant": "#047857",
+                        "surface": "#0c0c0f",
+                        "on-primary": "#0a0012",
+                        "on-tertiary": "#001a12",
+                        "tertiary": "#34d399",
+                        "inverse-primary": "#5b21b6",
+                        "on-background": "#fafafa",
+                        "background": "#09090b",
+                        "tertiary-fixed": "#bbf7d0",
+                        "on-error": "#1a0000",
+                        "primary": "#a78bfa",
+                        "surface-container-low": "#0f0f12",
+                        "surface-container-high": "#18181b",
+                        "surface-container-lowest": "#09090b",
+                        "error": "#ef4444",
+                        "inverse-on-surface": "#09090b",
+                        "on-secondary": "#09090b",
+                        "surface-dim": "#0c0c0f",
+                        "tertiary-container": "#065f46",
+                        "secondary": "#71717a",
+                        "on-secondary-fixed-variant": "#3f3f46",
+                        "error-container": "#3b1111",
+                        "surface-tint": "#a78bfa",
+                        "secondary-fixed": "#a1a1aa",
+                        "primary-fixed-dim": "#c4b5fd",
+                        "surface-container": "#121215",
+                        "on-surface": "#fafafa",
+                        "outline-variant": "#27272a",
+                        "on-tertiary-fixed": "#003318",
+                        "inverse-surface": "#fafafa",
+                        "on-error-container": "#fca5a5",
+                        "surface-container-highest": "#1e1e22",
+                        "on-tertiary-container": "#bbf7d0",
+                        "on-primary-container": "#ede9fe",
+                        "surface-variant": "#18181b",
+                        "on-secondary-fixed": "#18181b",
+                        "on-primary-fixed": "#2e1065",
+                        "surface-bright": "#18181b",
+                        "secondary-fixed-dim": "#71717a",
+                        "on-secondary-container": "#a1a1aa",
+                        "on-primary-fixed-variant": "#5b21b6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Geist"],
+                        "body": ["Geist"],
+                        "label": ["Geist"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Geist', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary selection:text-on-primary">
+<!-- Shared Navigation -->
+<header class="sticky top-0 z-50 w-full border-b border-outline-variant bg-background/80 backdrop-blur-md">
+<div class="mx-auto flex max-w-[1200px] items-center justify-between px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="size-8 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold tracking-tight">GK</h2>
+</div>
+<nav class="hidden items-center gap-8 md:flex">
+<a class="text-sm font-medium text-on-surface-variant hover:text-primary" href="projects.html">Work</a>
+<a class="text-sm font-medium text-on-surface-variant hover:text-primary" href="experience.html">Experience</a>
+<a class="text-sm font-medium text-on-surface-variant hover:text-primary" href="skills.html">Skills</a>
+<a class="text-sm font-medium text-on-surface-variant hover:text-primary" href="contact.html">Contact</a>
+<a class="text-sm font-medium text-on-surface-variant hover:text-primary" href="resume.html">Resume</a><a class="rounded-lg bg-primary px-4 py-2 text-sm font-bold text-on-primary hover:opacity-90" href="mailto:contact@gowthaman.me">Hire Me</a>
+</nav>
+</div>
+</header>
+<main class="mx-auto max-w-[1200px] px-6">
+<!-- Hero Section -->
+<section class="flex flex-col items-start gap-8 py-20 lg:flex-row lg:items-center lg:py-32">
+<div class="flex-1 space-y-6">
+<div class="space-y-2">
+<h1 class="text-5xl font-black tracking-tighter sm:text-7xl lg:text-8xl">
+                        Gowthaman K
+                    </h1>
+<p class="text-xl text-primary font-medium lg:text-2xl">UI/UX Designer</p>
+<p class="max-w-xl text-lg text-on-surface-variant leading-relaxed">
+                        5+ years designing websites, web apps &amp; mobile apps. Specializing in high-performance digital interfaces that bridge the gap between human needs and business objectives.
+                    </p>
+</div>
+<div class="flex flex-wrap gap-4">
+<a class="flex items-center justify-center gap-2 rounded-lg bg-[#a78bfa] px-8 py-4 text-base font-bold text-[#0a0012] transition-all hover:scale-105 shadow-[0_0_20px_rgba(167,139,250,0.3)]" href="https://behance.net/gowthaman1" target="_blank">
+                        View Portfolio
+                        <span class="material-symbols-outlined" data-icon="arrow_outward">arrow_outward</span>
+</a>
+<a class="flex items-center justify-center gap-2 rounded-lg border border-outline-variant bg-surface-container px-8 py-4 text-base font-bold text-on-surface transition-all hover:bg-surface-container-high" href="#contact">
+                        Contact Me
+                    </a>
+</div>
+</div>
+<div class="relative w-full lg:w-1/2">
+<div class="aspect-square w-full overflow-hidden rounded-2xl border border-outline-variant bg-surface-container">
+<img class="h-full w-full object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-700" data-alt="Modern minimalist workspace with high-end designer equipment, dark aesthetic with soft violet glowing accents on a mechanical keyboard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdi4MD6TuBoh2A6wD_gtLfFnQgCqU_KBZLt6QKN2yrxLrO51qXQQ4UCeacdVGON7nvBoRC_Jrwfqv2ih0PXAzUJxlewJXbe5CEGRruQvODrAP1gEaOn8cee3axxIukWsaxk24q1xezoQKluF0aBLVn-LkqSLByLhBenGUYhC5lS9i0U4Ry5cs3yV6A35JRwoVzeFAwdliAjwq2FnRiAQfevPKkwGxpii5nSYaZLD7PhIeCS5wgsQ4WId4zwv6ZF23XoFn8aQ54QLxU"/>
+</div>
+<div class="absolute -bottom-6 -left-6 hidden size-32 rounded-full border border-outline-variant bg-background/80 p-4 backdrop-blur md:block">
+<div class="flex h-full flex-col items-center justify-center text-center">
+<span class="text-2xl font-bold text-tertiary">5+</span>
+<span class="text-[10px] uppercase tracking-widest text-on-surface-variant">Years Exp</span>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-20 border-t border-outline-variant" id="about">
+<div class="grid gap-12 lg:grid-cols-3">
+<div class="lg:col-span-1">
+<h2 class="text-3xl font-bold tracking-tight">About Me</h2>
+</div>
+<div class="lg:col-span-2 space-y-8">
+<p class="text-xl text-on-surface-variant leading-relaxed">
+                        I am a UI/UX Designer dedicated to user-centered design, creating seamless digital experiences that balance business goals and user needs. My approach is rooted in precision, functionality, and the visual clarity required for complex systems.
+                    </p>
+<div class="flex flex-wrap gap-2">
+<span class="rounded-full bg-surface-container-highest px-4 py-1.5 text-sm font-medium border border-outline-variant">UI Design</span>
+<span class="rounded-full bg-surface-container-highest px-4 py-1.5 text-sm font-medium border border-outline-variant">UX Design</span>
+<span class="rounded-full bg-surface-container-highest px-4 py-1.5 text-sm font-medium border border-outline-variant">Wireframing</span>
+<span class="rounded-full bg-surface-container-highest px-4 py-1.5 text-sm font-medium border border-outline-variant">Prototyping</span>
+<span class="rounded-full bg-surface-container-highest px-4 py-1.5 text-sm font-medium border border-outline-variant">Figma</span>
+<span class="rounded-full bg-surface-container-highest px-4 py-1.5 text-sm font-medium border border-outline-variant">Adobe XD</span>
+<span class="rounded-full bg-surface-container-highest px-4 py-1.5 text-sm font-medium border border-outline-variant">Photoshop</span>
+<span class="rounded-full bg-surface-container-highest px-4 py-1.5 text-sm font-medium border border-outline-variant">Illustrator</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience Section -->
+<section class="py-20 border-t border-outline-variant" id="experience">
+<h2 class="mb-12 text-3xl font-bold tracking-tight">Professional Experience</h2>
+<div class="space-y-12">
+<div class="flex flex-col gap-4 md:flex-row md:gap-12">
+<div class="w-48 shrink-0 text-on-surface-variant font-medium">June 2023 – Present</div>
+<div>
+<h3 class="text-xl font-bold text-on-surface">Senior UI/UX Designer</h3>
+<p class="text-tertiary">Skyraan Technologies</p>
+<p class="mt-4 max-w-2xl text-on-surface-variant">Leading design initiatives for enterprise applications and consumer-facing mobile platforms. Focusing on design systems and cross-platform consistency.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 md:flex-row md:gap-12">
+<div class="w-48 shrink-0 text-on-surface-variant font-medium">Nov 2020 – June 2023</div>
+<div>
+<h3 class="text-xl font-bold text-on-surface">UI/UX Designer</h3>
+<p class="text-tertiary">Axeraan Technologies</p>
+<p class="mt-4 max-w-2xl text-on-surface-variant">Designed end-to-end user journeys for CRM and ERP systems. Reduced user friction through iterative prototyping and user testing sessions.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 md:flex-row md:gap-12">
+<div class="w-48 shrink-0 text-on-surface-variant font-medium">May 2019 – Oct 2020</div>
+<div>
+<h3 class="text-xl font-bold text-on-surface">Junior Designer</h3>
+<p class="text-tertiary">Webapptiv</p>
+<p class="mt-4 max-w-2xl text-on-surface-variant">Started professional journey focusing on web interfaces and digital marketing assets, learning the fundamentals of responsive design.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Grid -->
+<section class="py-20 border-t border-outline-variant" id="work">
+<h2 class="mb-12 text-3xl font-bold tracking-tight">Main Projects</h2>
+<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+<!-- Project 1 -->
+<div class="group overflow-hidden rounded-xl border border-outline-variant bg-surface-container-low transition-all hover:border-primary/50">
+<div class="aspect-video w-full bg-surface-container-highest">
+<img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Data visualization dashboard showing complex charts and analytics on a dark interface with vibrant primary color accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbDXUPCn8ytJi2FK1LuS9eLHr8IklApDfx5kPr3f7-8w6AjgB_zObFaSepesilWYin5R5_bZ9DA6M_yA-OiRbQ-qs0Q9_a_IE0PfgctnWp71WBg-41EyzodDoQbcglFghPjblN4D3EKzLO06v4sIIRayX-ATbGtu4AGKwg5WBpiUSz3L3_m3yhRF9Y59iu_7y-olO-pNGStmEHp7jJcUVmATPmuQmvCqv5t4sscHf3DwQOVxkmypLbvUKGdbVk8TLIQkjyP6zFgSfU"/>
+</div>
+<div class="p-6">
+<h3 class="text-lg font-bold">CRM System</h3>
+<p class="mt-2 text-sm text-on-surface-variant">Scalable relationship management tool for high-volume sales teams.</p>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="group overflow-hidden rounded-xl border border-outline-variant bg-surface-container-low transition-all hover:border-primary/50">
+<div class="aspect-video w-full bg-surface-container-highest">
+<img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Modern point of sale interface on a tablet display with clean typography and intuitive layout for retail environments" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzgabQdj8CUoK59IvdWgD_0PnFgwcC3UWYGDPlHH0R6K1Fya1c-FSbQ363b58lsOtgzn61ehLeWRaA2wj3COXfO_h2mof4wZ5reWaDgDD5Ph87_Pvm_KnNUYPSWZfScQt48PStqb7hOr_F_zxu28ZujjRyozpK4QFg8Gl6gcGvS88Z130jNFmTuSjZcKQ3DKLKf3V0MR2sCXUSKwYpTtShh-jRH1utb2yzFKBI0anIircRJD_8LhckdSaojz3KqoS_ADU1tB3E_LOm"/>
+</div>
+<div class="p-6">
+<h3 class="text-lg font-bold">Billing POS/ERP</h3>
+<p class="mt-2 text-sm text-on-surface-variant">Integrated inventory and point-of-sale solution for modern retail.</p>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="group overflow-hidden rounded-xl border border-outline-variant bg-surface-container-low transition-all hover:border-primary/50">
+<div class="aspect-video w-full bg-surface-container-highest">
+<img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Clean community portal interface with events calendar and member directory in a dark minimalist theme" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIHQIjO9DpS7VYUVlQOA904OfNCPf3YtuclKkcXeZbCrdw7wXXInA01LoMZs73xbgjMeD37ja2IdVukY3Eg-VPu6yKKG_5a7sq8dXxmQHHC8CWC_yK2C9d-IxyPUxBpwsOuhjCAmCJY-Rm4fD4k9dYDzmCFVeXcWZoX4BLIKSD264hL9CMt-n9ZHUE8exCLSA08mmQHX5ojcbzYnWYdClR-TG_PC9f_CgXNO9wCqhhaYpQt4yoAz4vCUdiLMX2zT1ANs-hAdMn9Xrw"/>
+</div>
+<div class="p-6">
+<h3 class="text-lg font-bold">Church Management System</h3>
+<p class="mt-2 text-sm text-on-surface-variant">Community engagement and administrative platform for religious organizations.</p>
+</div>
+</div>
+<!-- Project 4 -->
+<div class="group overflow-hidden rounded-xl border border-outline-variant bg-surface-container-low transition-all hover:border-primary/50">
+<div class="aspect-video w-full bg-surface-container-highest">
+<img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Professional invoice generator screen showing real-time preview and financial data tables on dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKr1HLr1CTjgIyxT1t2LK7Smuij5U5ECSQCPeCX5S0J2_na8roUy2LOWpNqWS4ZOQFI3iY_T3bfobqxMcafXKxqYZJu5uuMzGomkZf7D_kmd3MxrI7R1YoqJdPNO09UqCzRI6J1cPuQNqyKLvwyXo5PJCOnv-8PB3qM_hOoUp3bgsMWl603etDAkxeydkG28688yPAOK73CpOHdn2M7LDKlqugUvMpR67gRUDlpLP9Aw1ZcvhmaqcjGWSbYru4F4Kq0u93JRZqHxGu"/>
+</div>
+<div class="p-6">
+<h3 class="text-lg font-bold">Invoice Generator</h3>
+<p class="mt-2 text-sm text-on-surface-variant">Simplified billing tool for freelancers and small businesses.</p>
+</div>
+</div>
+<!-- Project 5 -->
+<div class="group overflow-hidden rounded-xl border border-outline-variant bg-surface-container-low transition-all hover:border-primary/50">
+<div class="aspect-video w-full bg-surface-container-highest">
+<img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Map-based real estate booking application with interactive pins and property detail cards" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApsHSAbt8YpFeVj3kdmjHMiwvAMABV5lGoyXOClnc5LxzRQ2eU0X8F68hHZhJecMNndHnuE_-dWtxVBUDbPcBgy-LxNagMw_jV1TmOFOooGxrAhah0Yd8lHAfAM2uB_SfxbjJ8x1ptm9ekSDByTNXgkOOILR7E947njBSrt9gbAy7pV7V57h16934rfCa3d33l0qgYYnUkYeEAskKxglhvzKwQwrz-MuqLYS5M28BCpSir0h34oDxB_AHccGBnBHwPxo-eemSLVniv"/>
+</div>
+<div class="p-6">
+<h3 class="text-lg font-bold">Land Booking System</h3>
+<p class="mt-2 text-sm text-on-surface-variant">Digital real estate transaction platform with interactive mapping.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Mini Projects / Mobile Apps -->
+<section class="py-20 border-t border-outline-variant">
+<div class="flex items-end justify-between mb-12">
+<div>
+<h2 class="text-3xl font-bold tracking-tight">Mini Projects</h2>
+<p class="mt-2 text-on-surface-variant">8+ Specialized Mobile Applications</p>
+</div>
+</div>
+<div class="grid gap-4 grid-cols-2 md:grid-cols-4 lg:grid-cols-8">
+<div class="flex flex-col items-center gap-3 p-4 rounded-xl border border-outline-variant bg-surface-container hover:bg-surface-container-high transition-colors text-center">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+</div>
+<span class="text-xs font-medium">Bible Reading</span>
+</div>
+<div class="flex flex-col items-center gap-3 p-4 rounded-xl border border-outline-variant bg-surface-container hover:bg-surface-container-high transition-colors text-center">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="photo_camera">photo_camera</span>
+</div>
+<span class="text-xs font-medium">Photo Editing</span>
+</div>
+<div class="flex flex-col items-center gap-3 p-4 rounded-xl border border-outline-variant bg-surface-container hover:bg-surface-container-high transition-colors text-center">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="fitness_center">fitness_center</span>
+</div>
+<span class="text-xs font-medium">Fitness Tracker</span>
+</div>
+<div class="flex flex-col items-center gap-3 p-4 rounded-xl border border-outline-variant bg-surface-container hover:bg-surface-container-high transition-colors text-center">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="music_note">music_note</span>
+</div>
+<span class="text-xs font-medium">Audio Player</span>
+</div>
+<div class="flex flex-col items-center gap-3 p-4 rounded-xl border border-outline-variant bg-surface-container hover:bg-surface-container-high transition-colors text-center">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="recipe">cooking</span>
+</div>
+<span class="text-xs font-medium">Recipe App</span>
+</div>
+<div class="flex flex-col items-center gap-3 p-4 rounded-xl border border-outline-variant bg-surface-container hover:bg-surface-container-high transition-colors text-center">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="event">event</span>
+</div>
+<span class="text-xs font-medium">Event Planner</span>
+</div>
+<div class="flex flex-col items-center gap-3 p-4 rounded-xl border border-outline-variant bg-surface-container hover:bg-surface-container-high transition-colors text-center">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="wallet">wallet</span>
+</div>
+<span class="text-xs font-medium">Expense Mgr</span>
+</div>
+<div class="flex flex-col items-center gap-3 p-4 rounded-xl border border-outline-variant bg-surface-container hover:bg-surface-container-high transition-colors text-center">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="more_horiz">more_horiz</span>
+</div>
+<span class="text-xs font-medium">View All</span>
+</div>
+</div>
+</section>
+<!-- Grouped Skills Section -->
+<section class="py-20 border-t border-outline-variant" id="skills">
+<h2 class="mb-12 text-3xl font-bold tracking-tight">Skill Matrix</h2>
+<div class="grid gap-12 md:grid-cols-2">
+<div class="space-y-6">
+<h3 class="flex items-center gap-2 text-xl font-bold">
+<span class="material-symbols-outlined text-primary" data-icon="architecture">architecture</span>
+                        Design Tools
+                    </h3>
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Figma</span>
+<span class="text-primary font-bold">95%</span>
+</div>
+<div class="h-1.5 w-full rounded-full bg-surface-container-highest">
+<div class="h-full rounded-full bg-primary" style="width: 95%"></div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="text-on-surface-variant">Adobe XD</span>
+<span class="text-primary font-bold">90%</span>
+</div>
+<div class="h-1.5 w-full rounded-full bg-surface-container-highest">
+<div class="h-full rounded-full bg-primary" style="width: 90%"></div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="text-on-surface-variant">Photoshop &amp; Illustrator</span>
+<span class="text-primary font-bold">85%</span>
+</div>
+<div class="h-1.5 w-full rounded-full bg-surface-container-highest">
+<div class="h-full rounded-full bg-primary" style="width: 85%"></div>
+</div>
+</div>
+</div>
+<div class="space-y-6">
+<h3 class="flex items-center gap-2 text-xl font-bold">
+<span class="material-symbols-outlined text-tertiary" data-icon="psychology">psychology</span>
+                        UX Skills
+                    </h3>
+<div class="grid grid-cols-1 gap-3">
+<div class="flex items-center gap-3 p-4 rounded-lg bg-surface-container border border-outline-variant">
+<span class="material-symbols-outlined text-tertiary" data-icon="check_circle">check_circle</span>
+<span>User Research &amp; Persona Building</span>
+</div>
+<div class="flex items-center gap-3 p-4 rounded-lg bg-surface-container border border-outline-variant">
+<span class="material-symbols-outlined text-tertiary" data-icon="check_circle">check_circle</span>
+<span>Information Architecture</span>
+</div>
+<div class="flex items-center gap-3 p-4 rounded-lg bg-surface-container border border-outline-variant">
+<span class="material-symbols-outlined text-tertiary" data-icon="check_circle">check_circle</span>
+<span>Interaction Design &amp; Prototyping</span>
+</div>
+<div class="flex items-center gap-3 p-4 rounded-lg bg-surface-container border border-outline-variant">
+<span class="material-symbols-outlined text-tertiary" data-icon="check_circle">check_circle</span>
+<span>Usability Testing</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-20 border-t border-outline-variant" id="contact">
+<div class="rounded-2xl bg-surface-container-high p-8 lg:p-16 border border-outline-variant">
+<div class="grid gap-12 lg:grid-cols-2">
+<div class="space-y-6">
+<h2 class="text-4xl font-bold tracking-tight">Let's build something <br/><span class="text-primary">extraordinary</span> together.</h2>
+<p class="text-on-surface-variant text-lg">Currently available for new opportunities and design consulting.</p>
+<div class="space-y-4 pt-6">
+<div class="flex items-center gap-4">
+<div class="flex size-10 items-center justify-center rounded-full bg-surface-container-highest border border-outline-variant">
+<span class="material-symbols-outlined text-primary" data-icon="mail">mail</span>
+</div>
+<a class="text-lg hover:text-primary transition-colors" href="mailto:contact@gowthaman.me">contact@gowthaman.me</a>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex size-10 items-center justify-center rounded-full bg-surface-container-highest border border-outline-variant">
+<span class="material-symbols-outlined text-primary" data-icon="call">call</span>
+</div>
+<span class="text-lg">+91 [Your Phone Number]</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex size-10 items-center justify-center rounded-full bg-surface-container-highest border border-outline-variant">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+</div>
+<span class="text-lg" data-location="Coimbatore">Coimbatore, India</span>
+</div>
+</div>
+</div>
+<form class="space-y-4">
+<div class="grid gap-4 sm:grid-cols-2">
+<div class="space-y-2">
+<label class="text-sm font-medium text-on-surface-variant">Name</label>
+<input class="w-full rounded-lg border border-outline-variant bg-surface-container p-3 text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-medium text-on-surface-variant">Email</label>
+<input class="w-full rounded-lg border border-outline-variant bg-surface-container p-3 text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none" placeholder="john@example.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-medium text-on-surface-variant">Message</label>
+<textarea class="w-full rounded-lg border border-outline-variant bg-surface-container p-3 text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none" placeholder="Tell me about your project..." rows="4"></textarea>
+</div>
+<button class="w-full rounded-lg bg-primary py-4 font-bold text-on-primary hover:opacity-90 transition-opacity" type="submit">Send Message</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Simple Footer -->
+<footer class="mt-20 border-t border-outline-variant py-12">
+<div class="mx-auto max-w-[1200px] px-6">
+<div class="flex flex-col items-center justify-between gap-6 md:flex-row">
+<p class="text-sm text-on-surface-variant">© 2024 Gowthaman K. Designed with precision.</p>
+<div class="flex gap-6">
+<a class="flex items-center justify-center gap-2 rounded-lg bg-[#a78bfa] px-8 py-4 text-base font-bold text-[#0a0012] transition-all hover:scale-105 shadow-[0_0_20px_rgba(167,139,250,0.3)]" href="https://behance.net/gowthaman1" target="_blank">Behance</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Dribbble</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
