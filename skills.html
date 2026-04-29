@@ -4,7 +4,8 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script id="tailwind-config">
       tailwind.config = {
@@ -67,16 +68,16 @@
                     "full": "9999px"
             },
             "fontFamily": {
-                    "headline": ["Geist"],
-                    "body": ["Geist"],
-                    "label": ["Geist"]
+                    "headline": ["Helvetica", "Arial", "sans-serif"],
+                    "body": ["Helvetica", "Arial", "sans-serif"],
+                    "label": ["Helvetica", "Arial", "sans-serif"]
             }
           },
         },
       }
     </script>
 <style>
-        body { font-family: 'Geist', sans-serif; background-color: #09090b; color: #fafafa; }
+        body { font-family: 'Helvetica', Arial, sans-serif; background-color: #09090b; color: #fafafa; }
         .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
         .skill-grid-pattern {
             background-image: radial-gradient(#27272a 1px, transparent 1px);
@@ -87,16 +88,25 @@
 <body class="bg-background text-on-background">
 <!-- TopNavBar -->
 <nav class="fixed top-0 w-full z-50 bg-[#09090b]/80 backdrop-blur-md border-b border-[#27272a]">
-<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
-<div class="text-xl font-bold tracking-tighter text-[#fafafa]">Gowthaman K</div>
-<div class="hidden md:flex items-center gap-8 font-['Geist'] tracking-tight">
-<a class="text-[#a1a1aa] hover:text-[#fafafa] transition-colors" href="index.html">Home</a>
-<a class="text-[#a1a1aa] hover:text-[#fafafa] transition-colors" href="experience.html">Experience</a>
-<a class="text-[#a78bfa] border-b-2 border-[#a78bfa] pb-1" href="skills.html">Skills</a>
-<a class="text-[#a1a1aa] hover:text-[#fafafa] transition-colors" href="projects.html">Projects</a>
-<a class="text-[#a1a1aa] hover:text-[#fafafa] transition-colors" href="contact.html">Contact</a>
+<div class="mx-auto flex max-w-[1200px] items-center justify-between px-6 py-4">
+<div class="flex items-center gap-3 w-1/4">
+<div class="size-8 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
 </div>
-<a href="resume.html" class="bg-primary text-on-primary px-5 py-2 rounded font-medium hover:brightness-110 active:scale-95 transition-all inline-block">Resume</a>
+<h2 class="text-xl font-bold tracking-tight text-[#fafafa]">KG</h2>
+</div>
+<div class="hidden md:flex items-center justify-center gap-8 font-['Helvetica'] tracking-tight w-2/4">
+<a class="text-[#a1a1aa] text-sm hover:text-[#fafafa] transition-colors" href="index.html">Home</a>
+<a class="text-[#a1a1aa] text-sm hover:text-[#fafafa] transition-colors" href="experience.html">Experience</a>
+<a class="text-[#a78bfa] text-sm border-b-2 border-[#a78bfa] pb-1" href="skills.html">Skills</a>
+<a class="text-[#a1a1aa] text-sm hover:text-[#fafafa] transition-colors" href="projects.html">Projects</a>
+<a class="text-[#a1a1aa] text-sm hover:text-[#fafafa] transition-colors" href="contact.html">Contact</a>
+</div>
+<div class="hidden md:flex w-1/4 justify-end">
+<a href="resume.html" class="bg-primary text-on-primary px-5 py-2 rounded-lg text-sm font-bold hover:opacity-90 active:scale-95 transition-all duration-100 inline-block">Download Resume</a>
+</div>
 </div>
 </nav>
 <main class="pt-24 pb-20 px-6 max-w-7xl mx-auto">
@@ -106,7 +116,7 @@
 <p class="text-on-surface-variant text-lg max-w-2xl">A technical breakdown of my design stack and core competencies in user experience research and interface construction.</p>
 </header>
 <!-- Bento Grid: Design Tools -->
-<section class="mb-24">
+<section class="mb-24" data-aos="fade-up">
 <div class="flex items-center gap-3 mb-8">
 <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">architecture</span>
 <h2 class="text-2xl font-bold tracking-tight">Design Tools</h2>
@@ -178,7 +188,7 @@
 </div>
 </section>
 <!-- Matrix Layout: UX Skills -->
-<section>
+<section data-aos="fade-up">
 <div class="flex items-center gap-3 mb-8">
 <span class="material-symbols-outlined text-tertiary" style="font-variation-settings: 'FILL' 1;">psychology</span>
 <h2 class="text-2xl font-bold tracking-tight">UX Core Competencies</h2>
@@ -230,8 +240,38 @@
 </div>
 </div>
 </section>
+<!-- Multimedia Skills Section -->
+<section class="mt-20" data-aos="fade-up">
+<div class="flex items-center gap-3 mb-8">
+<span class="material-symbols-outlined text-tertiary" style="font-variation-settings: 'FILL' 1;">movie</span>
+<h2 class="text-2xl font-bold tracking-tight">Multimedia & Design</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="p-8 border border-outline-variant rounded-xl bg-surface-container hover:border-primary transition-colors">
+<div class="mb-4 text-primary"><span class="material-symbols-outlined text-4xl">interests</span></div>
+<h3 class="text-lg font-bold mb-2">Logo Design</h3>
+<p class="text-on-surface-variant text-sm">Crafting unique, memorable brand marks and visual identities.</p>
+</div>
+<div class="p-8 border border-outline-variant rounded-xl bg-surface-container hover:border-primary transition-colors">
+<div class="mb-4 text-primary"><span class="material-symbols-outlined text-4xl">view_carousel</span></div>
+<h3 class="text-lg font-bold mb-2">Banner Design</h3>
+<p class="text-on-surface-variant text-sm">Designing high-converting web banners and promotional graphics.</p>
+</div>
+<div class="p-8 border border-outline-variant rounded-xl bg-surface-container hover:border-primary transition-colors">
+<div class="mb-4 text-primary"><span class="material-symbols-outlined text-4xl">video_camera_front</span></div>
+<h3 class="text-lg font-bold mb-2">Video Editing</h3>
+<p class="text-on-surface-variant text-sm">Editing crisp, engaging video content for digital platforms.</p>
+</div>
+<div class="p-8 border border-outline-variant rounded-xl bg-surface-container hover:border-primary transition-colors">
+<div class="mb-4 text-primary"><span class="material-symbols-outlined text-4xl">animation</span></div>
+<h3 class="text-lg font-bold mb-2">Animation</h3>
+<p class="text-on-surface-variant text-sm">Adding life to interfaces with subtle micro-interactions and motion.</p>
+</div>
+</div>
+</section>
+
 <!-- Decorative Quote Section -->
-<section class="mt-32 mb-16 py-20 bg-surface-container rounded-3xl relative overflow-hidden border border-outline-variant">
+<section class="mt-32 mb-16 py-20 bg-surface-container rounded-3xl relative overflow-hidden border border-outline-variant" data-aos="fade-up">
 <div class="skill-grid-pattern absolute inset-0 opacity-20"></div>
 <div class="relative z-10 text-center px-6">
 <blockquote class="text-3xl md:text-4xl font-bold tracking-tight italic text-fafafa mb-6">
@@ -245,16 +285,19 @@
 <!-- Footer -->
 <footer class="bg-[#09090b] w-full py-12 border-t border-[#27272a]">
 <div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto gap-4">
-<div class="text-lg font-semibold text-[#fafafa]">Gowthaman K</div>
-<div class="font-['Geist'] text-sm text-[#a1a1aa] text-center md:text-left">
-                © 2024 Gowthaman K. Built with Precision.
+<div class="text-lg font-semibold text-[#fafafa]">KG</div>
+<div class="font-['Helvetica'] text-sm text-[#a1a1aa] text-center md:text-left">
+                © <span id="year"></span> Gowthaman K. Built with Precision.
             </div>
 <div class="flex gap-6">
-<a class="text-[#a1a1aa] hover:text-[#34d399] transition-colors font-['Geist'] text-sm" href="#">LinkedIn</a>
-<a class="text-[#a1a1aa] hover:text-[#34d399] transition-colors font-['Geist'] text-sm" href="#">Dribbble</a>
-<a class="text-[#a1a1aa] hover:text-[#34d399] transition-colors font-['Geist'] text-sm" href="#">GitHub</a>
-<a class="text-[#a1a1aa] hover:text-[#34d399] transition-colors font-['Geist'] text-sm" href="#">Email</a>
+<a class="text-[#a1a1aa] hover:text-[#34d399] transition-colors font-['Helvetica'] text-sm flex items-center gap-1" href="https://behance.net/gowthaman1" target="_blank">Behance</a>
+<a class="text-[#a1a1aa] hover:text-[#34d399] transition-colors font-['Helvetica'] text-sm flex items-center gap-1" href="https://www.linkedin.com/in/gowthaman-k-50455023b" target="_blank"><span class="material-symbols-outlined text-[16px]">link</span>LinkedIn</a>
+<a class="text-[#a1a1aa] hover:text-[#34d399] transition-colors font-['Helvetica'] text-sm flex items-center gap-1" href="mailto:kgowtham2098@gmail.com"><span class="material-symbols-outlined text-[16px]">mail</span>Email</a>
 </div>
 </div>
 </footer>
+<script>
+  AOS.init({ duration: 800, once: true });
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body></html>
