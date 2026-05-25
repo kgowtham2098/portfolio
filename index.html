@@ -96,7 +96,7 @@
   <!-- Shared Navigation -->
   <header class="sticky top-0 z-50 w-full border-b border-outline-variant bg-background/80 backdrop-blur-md">
     <div class="mx-auto flex max-w-[1200px] items-center justify-between px-6 py-4">
-      <div class="flex items-center gap-3 w-1/4">
+      <div class="flex items-center gap-3 md:w-1/4">
         <div class="size-8 text-primary">
           <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
             <path clip-rule="evenodd"
@@ -106,16 +106,34 @@
         </div>
         <h2 class="text-xl font-bold tracking-tight">KG</h2>
       </div>
-      <nav class="hidden items-center justify-center gap-8 md:flex w-2/4">
-        <a class="text-sm font-medium text-on-surface-variant hover:text-primary" href="index.html">Home</a>
-        <a class="text-sm font-medium text-on-surface-variant hover:text-primary" href="experience.html">Experience</a>
-        <a class="text-sm font-medium text-on-surface-variant hover:text-primary" href="skills.html">Skills</a>
-        <a class="text-sm font-medium text-on-surface-variant hover:text-primary" href="projects.html">Projects</a>
-        <a class="text-sm font-medium text-on-surface-variant hover:text-primary" href="contact.html">Contact</a>
+      <nav class="hidden items-center justify-center gap-8 md:flex md:w-2/4">
+        <a class="text-sm font-medium text-[#a78bfa] border-b-2 border-[#a78bfa] pb-1" href="index.html">Home</a>
+        <a class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors" href="experience.html">Experience</a>
+        <a class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors" href="skills.html">Skills</a>
+        <a class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors" href="projects.html">Projects</a>
+        <a class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors" href="contact.html">Contact</a>
       </nav>
-      <div class="hidden md:flex w-1/4 justify-end">
-        <a class="rounded-lg bg-primary px-4 py-2 text-sm font-bold text-on-primary hover:opacity-90"
+      <div class="hidden md:flex md:w-1/4 justify-end">
+        <a class="rounded-lg bg-primary px-4 py-2 text-sm font-bold text-on-primary hover:opacity-90 active:scale-95 transition-all duration-100"
           href="resume.html">Download Resume</a>
+      </div>
+      <!-- Hamburger Menu Button -->
+      <button id="mobile-menu-btn" class="flex items-center justify-center p-2 text-on-surface hover:text-primary focus:outline-none md:hidden" aria-label="Toggle Menu">
+        <span class="material-symbols-outlined text-2xl">menu</span>
+      </button>
+    </div>
+    <!-- Mobile Menu Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-outline-variant bg-background/95 backdrop-blur-md transition-all duration-300 ease-in-out">
+      <div class="flex flex-col gap-4 px-6 py-6">
+        <a class="text-base font-semibold text-primary py-2" href="index.html">Home</a>
+        <a class="text-base font-medium text-on-surface-variant hover:text-primary transition-colors py-2" href="experience.html">Experience</a>
+        <a class="text-base font-medium text-on-surface-variant hover:text-primary transition-colors py-2" href="skills.html">Skills</a>
+        <a class="text-base font-medium text-on-surface-variant hover:text-primary transition-colors py-2" href="projects.html">Projects</a>
+        <a class="text-base font-medium text-on-surface-variant hover:text-primary transition-colors py-2" href="contact.html">Contact</a>
+        <hr class="border-outline-variant my-2" />
+        <a class="rounded-lg bg-primary px-4 py-3 text-center text-base font-bold text-on-primary hover:opacity-90 active:scale-95 transition-all duration-100" href="resume.html">
+          Download Resume
+        </a>
       </div>
     </div>
   </header>
@@ -124,7 +142,7 @@
     <section class="flex flex-col items-start gap-8 py-20 lg:flex-row lg:items-center lg:py-32" data-aos="fade-up">
       <div class="flex-1 space-y-6">
         <div class="space-y-2">
-          <h1 class="text-5xl font-black tracking-tighter sm:text-7xl lg:text-8xl">
+          <h1 class="text-4xl sm:text-7xl lg:text-8xl font-black tracking-tighter">
             Gowthaman K
           </h1>
           <p class="text-xl text-primary font-medium lg:text-2xl">UI/UX Designer</p>
@@ -617,6 +635,30 @@
       once: true,
     });
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Mobile Menu Toggle Logic
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (mobileMenuBtn && mobileMenu) {
+      mobileMenuBtn.addEventListener('click', () => {
+        const isHidden = mobileMenu.classList.contains('hidden');
+        if (isHidden) {
+          mobileMenu.classList.remove('hidden');
+          mobileMenuBtn.innerHTML = '<span class="material-symbols-outlined text-2xl">close</span>';
+        } else {
+          mobileMenu.classList.add('hidden');
+          mobileMenuBtn.innerHTML = '<span class="material-symbols-outlined text-2xl">menu</span>';
+        }
+      });
+
+      // Close menu on resize to desktop
+      window.addEventListener('resize', () => {
+        if (window.innerWidth >= 768 && !mobileMenu.classList.contains('hidden')) {
+          mobileMenu.classList.add('hidden');
+          mobileMenuBtn.innerHTML = '<span class="material-symbols-outlined text-2xl">menu</span>';
+        }
+      });
+    }
   </script>
 </body>
 
