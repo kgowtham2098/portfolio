@@ -147,7 +147,7 @@
           </h1>
           <p class="text-xl text-primary font-medium lg:text-2xl">UI/UX Designer</p>
           <p class="max-w-xl text-lg text-on-surface-variant leading-relaxed">
-            UI/UX Designer with 5+ years of experience creating user-centered designs for websites, web apps, and mobile
+            UI/UX Designer with <span id="hero-exp-desc">5+ years</span> of experience creating user-centered designs for websites, web apps, and mobile
             applications. Skilled in transforming ideas into clean, functional, and engaging digital products.
           </p>
         </div>
@@ -173,7 +173,7 @@
         <div
           class="absolute -bottom-6 -left-6 hidden size-32 rounded-full border border-outline-variant bg-background/80 p-4 backdrop-blur md:block">
           <div class="flex h-full flex-col items-center justify-center text-center">
-            <span class="text-2xl font-bold text-tertiary">5+</span>
+            <span class="text-2xl font-bold text-tertiary" id="hero-exp-badge">5+</span>
             <span class="text-[10px] uppercase tracking-widest text-on-surface-variant">Years Exp</span>
           </div>
         </div>
@@ -187,7 +187,7 @@
         </div>
         <div class="lg:col-span-2 space-y-8">
           <div class="space-y-4 text-xl text-on-surface-variant leading-relaxed">
-            <p>I am a UI/UX Designer with over 5+ years of experience in designing websites, web applications, and
+            <p>I am a UI/UX Designer with over <span id="about-exp-text">5+ years</span> of experience in designing websites, web applications, and
               mobile apps for Android and iOS. I specialize in creating user-friendly and visually appealing interfaces
               through strong user-centered design principles.</p>
             <p>I have worked on various domains including CRM systems, billing platforms (POS &amp; ERP), library
@@ -635,6 +635,23 @@
       once: true,
     });
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Calculate dynamic experience years since July 2020
+    const baseYear = 2020;
+    const baseMonth = 6; // July (0-indexed: January is 0, July is 6)
+    const currentDate = new Date();
+    let years = currentDate.getFullYear() - baseYear;
+    if (currentDate.getMonth() < baseMonth) {
+      years--;
+    }
+    
+    const badgeEl = document.getElementById("hero-exp-badge");
+    const descEl = document.getElementById("hero-exp-desc");
+    const aboutEl = document.getElementById("about-exp-text");
+    
+    if (badgeEl) badgeEl.textContent = `${years}+`;
+    if (descEl) descEl.textContent = `${years}+ years`;
+    if (aboutEl) aboutEl.textContent = `${years}+ years`;
 
     // Mobile Menu Toggle Logic
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
